@@ -232,19 +232,19 @@ function Cart() {
 				setError(null);
 				setProcessing(false);
 				setSucceeded(true);
+
+				//After we submit the payment and it goes through, we should clear the cart
+				await axios.delete("/cart/deleteAll", {
+					headers: { "auth-token": localStorage.getItem("auth-token") },
+					data: { username },
+				});
+
+				//Re-render the page by calling the update state
+				setUpdate(!update);
+
+				//Re-render the cart icon number
+				userContext.setCartItems();
 			}
-
-			//After we submit the payment and it goes through, we should clear the cart
-			await axios.delete("/cart/deleteAll", {
-				headers: { "auth-token": localStorage.getItem("auth-token") },
-				data: { username },
-			});
-
-			//Re-render the page by calling the update state
-			setUpdate(!update);
-
-			//Re-render the cart icon number
-			userContext.setCartItems();
 		} catch (error) {
 			console.log(error.message);
 		}
