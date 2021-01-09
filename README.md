@@ -1,7 +1,7 @@
 # e-commerce-app
 # Quick demo
 
-After the user has signed in and been authenticated with a JWT, they are brought to a product page.
+After the user has signed in and been authenticated with a JWT, they are brought to the product page.
 
 ![Site Demo](assets/aca205e48c7f26e57db5e20821a53f8a.gif)
 
