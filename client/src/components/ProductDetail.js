@@ -31,9 +31,12 @@ function ProductDetail({ match }) {
 		let mounted = true;
 		async function getProduct() {
 			try {
+<<<<<<< HEAD
 				//Takes user to top of page when link is clicked
 				window.scrollTo(0, 0);
 
+=======
+>>>>>>> 473ab9f821627085572b16a3fcb32d349b4faf63
 				//Retrieving the product with the match variable
 				const product = await axios.get(`/products/${match.params.id}`, {
 					headers: { "auth-token": localStorage.getItem("auth-token") },
