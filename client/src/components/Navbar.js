@@ -100,7 +100,7 @@ function Navbar() {
 								style={{ textDecoration: "none", color: "white" }}
 							>
 								<Grid item>
-									<h1>Expensive Things For Cheap Prices</h1>
+									<h1>BargainBucket</h1>
 								</Grid>
 							</Link>
 						)}
