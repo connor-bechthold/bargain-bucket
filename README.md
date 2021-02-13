@@ -1,4 +1,4 @@
-# e-commerce-app
+# BargainBucket
 # Quick demo
 
 After the user has signed in and been authenticated with a JWT, they are brought to the product page.
